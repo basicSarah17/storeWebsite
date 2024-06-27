@@ -1,0 +1,294 @@
+    body {
+        background-color: #f5f5f5;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    label {
+        display: white;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    input[type="text"],
+    select {
+        width: 250px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button[type="submit"],
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover,
+    input[type="submit"]:hover {
+        background-color: black;
+    }
+    
+    form {
+        margin-bottom: 30px;
+    }
+    
+    div.relative {
+        position: relative;
+        left: 15;
+        width: 400px;
+        height: 700px;
+        border: 5px solid silver;
+    }
+    
+    div.absolute {
+        position: absolute;
+        top: 250px;
+        right: 15;
+        width: 400px;
+        height: 400px;
+        border: 5px solid silver;
+    }
+    
+    body {
+        background-color: gray;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #444;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-flex;
+    }
+    
+    nav ul li a {
+        display: inline-flex;
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    nav ul li a:hover {
+        background-color: #555;
+    }
+    
+    .image {
+        margin-right: 50px;
+    }
+    
+    .description {
+        padding-top: 10px;
+        margin-right: 60px;
+        width: 115px;
+    }
+    
+    .description span {
+        display: block;
+        font-size: 14px;
+        color: #E1E8EE;
+        font-weight: 400;
+    }
+    
+    .description span:first-child {
+        margin-bottom: 5px;
+    }
+    
+    .description span:last-child {
+        font-weight: 300;
+        margin-top: 8px;
+        color: #E1E8EE;
+    }
+    
+    is-active {
+        animation-name: animate;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(28);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes animate {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: right;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+    
+    .buttons {
+        position: relative;
+        margin-right: 60px;
+    }
+    
+    .delete-btn,
+    .like-btn {
+        display: inline-block;
+        Cursor: pointer;
+    }
+    
+    .delete-btn {
+        width: 18px;
+        height: 17px;
+    }
+    
+    .like-btn {
+        position: absolute;
+        top: 9px;
+        left: 15px;
+        background: url('twitter-heart.png');
+        width: 60px;
+        height: 60px;
+        background-size: 2900%;
+        background-repeat: no-repeat;
+    }
+    
+    .title {
+        height: 60px;
+        border-bottom: 1px solid #E1E8EE;
+        padding: 20px 30px;
+        color: #E1E8EE;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .item {
+        padding: 20px 30px;
+        height: 120px;
+        display: flex;
+    }
+    
+    .item:nth-child(3) {
+        border-top: 1px solid #E1E8EE;
+        border-bottom: 1px solid #E1E8EE;
+    }
+    
+    .shopping-cart {
+        width: 750px;
+        margin: 80px auto;
+        box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 6px;
+        border: 5px solid silver;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .quantity {
+        padding-top: 20px;
+        margin-right: 60px;
+    }
+    
+    .quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: black;
+        font-weight: 300;
+    }
+    
+    button[class*=btn] {
+        width: 30px;
+        height: 30px;
+        background-color: #E1E8EE;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .minus-btn img {
+        margin-bottom: 3px;
+    }
+    
+    .plus-btn img {
+        margin-top: 2px;
+    }
+    
+    button:focus,
+    input:focus {
+        outline: 0;
+    }
+    
+    @media (max-width: 800px) {
+        .shopping-cart {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .item {
+            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image img {
+            width: 50%;
+        }
+        .image,
+        .quantity,
+        .description {}
+        .buttons {
+            margin-right: 20px;
+        }
+    }
+    
+    .total-price {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 16px;
+        color: #E1E8EE;
+        font-weight: 300;
+    }
+    
+    .delete-btn {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 16px;
+        color: #E1E8EE;
+        font-weight: 300;
+    }
+    
+    .product-link {
+        text-decoration: none;
+        /* Remove underline */
+        color: inherit;
+        /* Inherit text color from parent */
+        display: block;
+        /* Make the link a block element for spacing */
+    }
